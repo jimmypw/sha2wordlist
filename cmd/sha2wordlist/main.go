@@ -7,7 +7,17 @@ import (
 	pgpwords "github.com/jimmypw/golang-sha2wordlist"
 )
 
+func usage() {
+	fmt.Printf("Error: No input file specified.\n")
+	fmt.Printf("Usage:\n")
+	fmt.Printf("%s /bin/bash\n", os.Args[0])
+}
+
 func main() {
+	if len(os.Args) < 2 {
+		usage()
+		os.Exit(1)
+	}
 	pgpfn := pgpwords.File{
 		Filename:   os.Args[1],
 		Hashmethod: "sha256",
