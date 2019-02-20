@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	pgpwords "github.com/jimmypw/golang-pgpwords"
+	pgpwords "github.com/jimmypw/golang-sha2wordlist"
 )
 
 func main() {

@@ -1,4 +1,4 @@
-package pgpwords
+package sha2wordlist
 
 import (
 	"testing"
