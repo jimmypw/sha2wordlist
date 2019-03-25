@@ -4,7 +4,7 @@ PGP Wordlists for golang
 
 ## Install
 
-go install github.com/jimmypw/golang-sha2wordlist/cmd/...
+go install github.com/jimmypw/sha2wordlist/cmd/...
 
 ## Usage
 

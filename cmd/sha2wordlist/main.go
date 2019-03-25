@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	pgpwords "github.com/jimmypw/golang-sha2wordlist"
+	sha2wordlist "github.com/jimmypw/sha2wordlist"
 )
 
 func usage() {
@@ -18,7 +18,7 @@ func main() {
 		usage()
 		os.Exit(1)
 	}
-	pgpfn := pgpwords.File{
+	pgpfn := sha2wordlist.File{
 		Filename:   os.Args[1],
 		Hashmethod: "sha256",
 	}
